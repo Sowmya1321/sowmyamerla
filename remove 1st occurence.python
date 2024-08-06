@@ -1,0 +1,8 @@
+l=[]
+n=int(input("enter no of elements="))
+for i in range(n):
+	ele=int(input("enter the elements:"))
+	l.append(ele)
+print(l)
+l.remove(3)
+print("after removing first occurance elements=",l)	
