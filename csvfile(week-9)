@@ -1,0 +1,9 @@
+import csv
+data=[['s.no','rollno','name'],[1,23,'ss'],[2,23,'sk']]
+with open("table.csv",'w',newline='') as file:
+	s=csv.writer(file)
+	s.writerows(data)
+with open('table.csv','r') as f:
+	rd=csv.reader(f)
+	for row in rd:
+		print(row)	
