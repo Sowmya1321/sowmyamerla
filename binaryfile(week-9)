@@ -1,0 +1,6 @@
+with open("demo.txt",'wb') as file:
+	binary=bytes([120,3,225,0,100])
+	file.write(binary)
+with open("demo.txt",'rb') as file:
+	binary=file.read()
+	print(binary)	
